@@ -515,7 +515,7 @@ header .burger-menu {
   height: 0;
   width: 4px; }
 
-#light-bulb {
+#light {
   position: relative; }
 
 input[value="off"]:checked ~
