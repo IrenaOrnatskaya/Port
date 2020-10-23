@@ -538,8 +538,6 @@ header {
         }
     }
 }
-
-// light bulb
             #lamp-holder {
                 position: fixed;
                 left: 95%;
@@ -575,7 +573,7 @@ header {
                 height: 0;
                 width: 4px;
             }
-            #light-bulb {
+            #light {
                 position:relative;
             }
             input[value="off"]:checked ~
