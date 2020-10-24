@@ -30,7 +30,7 @@
     					<li class="nav-item"><a class="nav-item-link" href="">Projects</a></li>
     					<li class="nav-item"><a class="nav-item-link" href="">Experience</a></li>
                     </ul>
-                        <p class="phone-number">+90 (555) 887 53 42</p>
+                        <p class="menu-phone-number">+90 (555) 887 53 42</p>
                         <div class="box-email">
     <a href="email:ornatskayairena@gmail.com" class="link-email">Email me</a>
     <div class="email-envelope">
@@ -119,21 +119,66 @@
     			<h2>PROJECTS</h2>
                 <h3>MyLib</h3>
                 <p>Component library with html and css code examples</p>
-                <a class="github-link" href="https://github.com/IrenaOrnatskaya/Mylib" target="_blank">Github</a>
+                <a class="github-link" href="https://github.com/IrenaOrnatskaya/Mylib" target="_blank">Github<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg></a>
             </div>
             <div class="projects-library">
                 <h3>Adaptive Layout Example</h3>
                 <p>html page with burger menu</p>
-                <a class="github-link" href="https://github.com/mashimara/HW_09_responsive" target="_blank">Github</a>
+                <a class="github-link" href="https://github.com/mashimara/HW_09_responsive" target="_blank">Github<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg></a>
     		</section>
             <section class="parallax-three" data-stellar-background-ratio="0.5"></section>
-    		<section class="experience">
-    			<h2>EXPERIENCE</h2>
+    		<section id="timeline">
+            <h2>TIMELINE</h2>
+            <ul id="dates">
+      <li><a href="#">2014</a></li>
+      <li><a href="#">2016</a></li>
+      <li><a href="#">2018</a></li>
+      <li><a href="#">2019</a></li>
+      <li><a href="#">2020</a></li>
+   </ul>
+   <ul id="issues">
+      <li id="2014">
+         <p>Bachelor of Arts: Professional writing, Editing and Publishing</p>
+         <p>Odessa I.I. Mechnikov National University - Ukraine</p>
+      </li>
+      <li id="2016">
+         <p>2016-2018</p>
+         <p>Publishing assistant - Odessa, Ukraine</p>
+      </li>
+      <li id="2018">
+         <p>Relocation to Istanbul, Turkey</p>
+         <p>English training center</p>
+      </li>
+      <li id="2019">
+         <p>English teacher - "American English"</p>
+      </li>
+      <li id="2020">
+         <p>AUG 2020 - OCT 2020</p>
+<p>IT school Hillel</p>
+<p>Front-end basic course</p>
+      </li>
+   </ul>
+</section>
     		</section>
-    	</div>
+            <footer class="footer">
+                <p class="collaboration">Want to collaborate?</p>
+                <div class="social">
+                <a class="email"href="Email:ornatskayairena@gmail.com" target="_blank">
+                    <p class="social-info">email me<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg></p></a>
+                    <span class="phone-number">+90 (555) 887 53 42</span>
+                </div>
+    </footer>
+</div>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="js/script.js"></script>
             <script src="jquery.stellar.min.js"></script>
-           
+            <script src="js/jquery.timelinr-0.9.7.js"></script>
+           <script>
+    $(function(){
+      $().timelinr({
+        arrowKeys: 'true'
+      })
+    });
+  </script>
 	</body> 
 </html>
