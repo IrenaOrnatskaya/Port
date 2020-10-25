@@ -414,6 +414,11 @@ header .burger-menu {
   bottom: -2%;
   z-index: 15; }
 
+.arrow svg {
+  position: relative;
+  -webkit-animation: bounce ease 1s infinite;
+          animation: bounce ease 1s infinite; }
+
 @-webkit-keyframes bounce {
   0 {
     bottom: 0; }
@@ -425,11 +430,6 @@ header .burger-menu {
     bottom: 0; }
   100% {
     bottom: -25px; } }
-
-.arrow svg {
-  position: relative;
-  -webkit-animation: bounce ease 1s infinite;
-          animation: bounce ease 1s infinite; }
 
 .arrow .scroll {
   transform: rotate(180deg);
@@ -845,6 +845,10 @@ label:after {
     .projects svg * {
       fill: #ee6c6c; }
 
+.dot-coral {
+  color: #ee6c6c;
+  font-size: 150px; }
+
 .parallax-three {
   margin-bottom: 80px;
   background-image: url("../img/ist.jpeg");
@@ -924,20 +928,15 @@ label:after {
   align-items: center;
   font-size: 28px;
   font-weight: bold; }
-
-.social-info svg {
-  position: relative;
-  top: 7px;
-  left: 13px; }
+  .social-info svg {
+    position: relative;
+    top: 7px;
+    left: 13px; }
 
 .collaboration {
   margin-bottom: 20px;
   font-size: 22px;
   color: #5580ad; }
-
-.dot-coral {
-  color: #ee6c6c;
-  font-size: 150px; }
 
 .arrow-bottom {
   position: relative;

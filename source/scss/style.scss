@@ -180,6 +180,8 @@ header {
         z-index: 50;
         }
 }
+
+
 .burger-menu {
         .burger-menu-line {
             display: block;
@@ -317,6 +319,9 @@ header {
 	padding: 100px;
 	font-size: 22px;
 }
+
+// envelope 
+
 .menu-open .box-email{
 	cursor: pointer;
 	margin: 0 100px;
@@ -331,7 +336,6 @@ header {
 	position: relative;
 	margin: 0 auto;
 }
-
 .menu-open .email-envelope:before {
 	content: '';
 	width: 0;
@@ -352,7 +356,6 @@ header {
 	top: 0;
 	left: 0;
 }
-
 .menu-open .email-envelope:after {
 	content: '';
 	width: 0;
@@ -365,7 +368,6 @@ header {
 	bottom: 0;
 	left: 0;
 }
-
 .menu-open .box-email:hover .email-envelope:before {
 	-webkit-transform: rotateX(150deg);
 	-moz-transform: rotateX(150deg);
@@ -373,7 +375,6 @@ header {
 	-o-transform: rotateX(150deg);
 	transform: rotateX(150deg);
 }
-
 .menu-open .link-email{
 	color: $bg-content;
 	font-size: 24px;
@@ -404,7 +405,6 @@ header {
 	top: 0;
 	border-radius: 10px;
 }
-
 .box-email:hover .link-email{
 	-webkit-transform: translateX(-50%) scale(1);
 	-moz-transform: translateX(-50%) scale(1);
@@ -418,6 +418,8 @@ header {
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 	filter: alpha(opacity=100);
 }
+
+
 .arrow {
   position: absolute;
   display: flex;
@@ -425,6 +427,10 @@ header {
   left: 102%;
   bottom: -2%;
   z-index: 15;
+}
+.arrow svg {
+    position: relative;
+    animation: bounce ease 1s infinite;
 }
 @keyframes bounce {
   0 {
@@ -434,10 +440,7 @@ header {
     bottom: -25px;
   }
 }
-.arrow svg {
-    position: relative;
-    animation: bounce ease 1s infinite;
-}
+
 .arrow .scroll {
     transform: rotate(180deg);
     padding-top: 20px;
@@ -470,6 +473,9 @@ header {
             }
         }
     }
+
+
+
 .dark-theme {
 	background: $bg-color-dark;
 	transition: 2s;
@@ -600,6 +606,10 @@ header {
         color: $bg-brand;
     }
 }
+
+
+// lamp 
+
 
 #lamp-holder {
     position: fixed;
@@ -799,6 +809,8 @@ label:after {
         transform: rotate(-3deg) translate(16.4px,-1px);
     }
 }
+
+
 .parallax {
 	margin-bottom: $step;
     background-image: url("../img/ist40.jpg"), url("../img/ist25.jpg"), url("../img/ist27.jpg");
@@ -808,6 +820,8 @@ label:after {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: contain, contain, contain;
 }
+
+
 .skills {
 	border-radius: 10px;
 	padding: 80px 100px;
@@ -942,6 +956,7 @@ label:after {
 	content:"60%";
 }
 
+
 .parallax-two {
     margin-bottom: 80px;
     background-image: url("../img/ist60.jpg"), url("../img/ist12.jpeg"), url("../img/ist10.jpeg");
@@ -951,6 +966,7 @@ label:after {
     background-repeat: no-repeat, no-repeat;
     background-size: contain; 
 }
+
 
 .projects {
 	display: block;
@@ -984,6 +1000,10 @@ label:after {
         }
     }
 }
+.dot-coral {
+    color: $bg-brand;
+    font-size: 150px;
+}
 .parallax-three {
 	margin-bottom: $step;
     background-image: url("../img/ist.jpeg");
@@ -992,6 +1012,9 @@ label:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+// timeline
+
 
 #timeline {
     overflow: hidden;
@@ -1076,20 +1099,16 @@ label:after {
     align-items: center;
     font-size: 28px;
     font-weight: bold;
-}
-.social-info svg {
-    position: relative;
-    top: 7px;
-    left: 13px;
+    svg {
+        position: relative;
+        top: 7px;
+        left: 13px;
+    }
 }
 .collaboration {
     margin-bottom: 20px;
     font-size: 22px;
     color: $brand-color;
-}
-.dot-coral {
-    color: $bg-brand;
-    font-size: 150px;
 }
 .arrow-bottom {
     position: relative; 
