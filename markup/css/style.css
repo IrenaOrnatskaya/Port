@@ -219,14 +219,14 @@ header .burger-menu {
 .burger-menu .burger-menu-line {
   display: block;
   width: 48px;
-  height: 5px;
+  height: 3px;
   background-color: #111922;
   position: relative; }
   .burger-menu .burger-menu-line:after {
     content: "";
     display: block;
     width: 48px;
-    height: 5px;
+    height: 3px;
     background: #111922;
     position: absolute;
     left: 0;
@@ -235,7 +235,7 @@ header .burger-menu {
     content: "";
     display: block;
     width: 48px;
-    height: 5px;
+    height: 3px;
     background: #111922;
     position: absolute;
     left: 0;
@@ -861,70 +861,58 @@ label:after {
   padding: 80px 100px;
   box-shadow: 7px 9px 17px 0 rgba(85, 128, 173, 0.2);
   margin-bottom: 80px; }
-
-#timeline h2 {
-  font-size: 80px;
-  margin: 0 0 40px;
-  color: #5580ad; }
+  #timeline h2 {
+    font-size: 80px;
+    margin: 0 0 40px;
+    color: #5580ad; }
 
 #dates {
   display: flex;
   padding-bottom: 60px; }
-
-#dates li {
-  list-style: none;
-  width: 100px;
-  height: 60px;
-  font-size: 24px;
-  text-align: center;
-  background: url("../img/circle.svg") center bottom no-repeat; }
-
-#dates a {
-  line-height: 38px;
-  padding-bottom: 10px; }
-
-#dates .selected {
-  font-size: 42px; }
+  #dates li {
+    list-style: none;
+    width: 100px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    background: url("../img/circle.svg") center bottom no-repeat; }
+  #dates a {
+    line-height: 38px;
+    padding-bottom: 10px; }
+  #dates .selected {
+    font-size: 42px; }
 
 #issues {
   width: 800px;
   overflow: hidden;
   white-space: nowrap; }
-
-#issues li {
-  width: 800px;
-  display: inline-block;
-  list-style: none;
-  margin: 20px 0; }
-
-#issues li p {
-  display: block; }
-
-#issues li h1 {
-  color: #ffcc00;
-  font-size: 48px;
-  margin: 20px 0; }
-
-#issues li p {
-  font-size: 22px;
-  font-family: playfair display, serif;
-  line-height: 30px; }
-
-#issues li p .location {
-  color: #ee6c6c; }
-
-#issues date {
-  color: #5580ad;
-  font-size: 26px; }
-
-#issues .certificate {
-  color: #ee6c6c; }
-  #issues .certificate svg {
-    position: relative;
-    top: 16px;
-    left: 11px; }
-    #issues .certificate svg * {
-      fill: #ee6c6c; }
+  #issues li {
+    width: 800px;
+    display: inline-block;
+    list-style: none;
+    margin: 20px 0; }
+    #issues li p {
+      display: block;
+      font-size: 22px;
+      font-family: playfair display, serif;
+      line-height: 30px; }
+      #issues li p .location {
+        color: #ee6c6c; }
+    #issues li h1 {
+      color: #ffcc00;
+      font-size: 48px;
+      margin: 20px 0; }
+  #issues date {
+    color: #5580ad;
+    font-size: 26px; }
+  #issues .certificate {
+    color: #ee6c6c; }
+    #issues .certificate svg {
+      position: relative;
+      top: 16px;
+      left: 11px; }
+      #issues .certificate svg * {
+        fill: #ee6c6c; }
 
 .social {
   display: flex;

@@ -184,14 +184,14 @@ header {
         .burger-menu-line {
             display: block;
             width: 48px;
-            height: 5px;
+            height: 3px;
             background-color: $bg-color-dark;
             position: relative;
             &:after {
                 content: "";
                 display: block;
                 width: 48px;
-                height: 5px;
+                height: 3px;
                 background: $bg-color-dark;
                 position: absolute;
                 left: 0;
@@ -201,7 +201,7 @@ header {
                 content: "";
                 display: block;
                 width: 48px;
-                height: 5px;
+                height: 3px;
                 background: $bg-color-dark;
                 position: absolute;
                 left: 0;
@@ -600,210 +600,205 @@ header {
         color: $bg-brand;
     }
 }
-            #lamp-holder {
-                position: fixed;
-                left: 95%;
-                top: 0;
-            }
-            #wire {
-                position: relative;
-                background-color: #000000;
-                width: 2px;
-                height: 150px;
-                left: 50%;
-                margin-left: 18px;
-                z-index: 1;
-                -webkit-transform-origin: 0% 0%;
-                   -moz-transform-origin: 0% 0%;
-                    -ms-transform-origin: 0% 0%;
-                     -o-transform-origin: 0% 0%;
-                        transform-origin: 0% 0%;
-                -webkit-animation: swing .9s ease-in-out 0s infinite alternate;
-                   -moz-animation: swing .9s ease-in-out 0s infinite alternate;
-                    -ms-animation: swing .9s ease-in-out 0s infinite alternate;
-                     -o-animation: swing .9s ease-in-out 0s infinite alternate;
-                        animation: swing .9s ease-in-out 0s infinite alternate;
-            }
-            #wire:after {
-                content: " ";
-                left: -3px;
-                top: 98%;
-                position: absolute;
-                border-bottom: 15px solid #000000;
-                border-left: 4px solid transparent;
-                border-right: 4px solid transparent;
-                height: 0;
-                width: 4px;
-            }
-            #light {
-                position:relative;
-            }
-            input[value="off"]:checked ~
-            #wire {
-                -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
-                   -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
-                    -ms-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
-                     -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
-                        box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
-            }
-            input[value="off"]:checked ~
-            #wire:after {
-                -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-                   -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-                    -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-                     -o-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-                        box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-            }
-            
-            input {
-                position: absolute;
-                width: 90px;
-                height: 70px;
-                top: 150px;
-                margin-left:-45px;
-                opacity: 0;
-                z-index: 1;
-                cursor: pointer;
-            }
-            
-            input[value="on"] {
-                top: 150px;
-            }
-            input[value="off"] {
-                top: -100px;
-            }
-            input[value="on"]:checked {
-                top: -100px;
-            }
-            input[value="on"]:checked + input[value="off"] {
-                top: 150px;
-            }
-            
-            label {
-                width: 51px;
-                height: 51px;
-                top: 163px;
-                position: absolute;
-                left: 0;
-                margin-left: 4px;
-                -webkit-border-radius: 100%;
-                   -moz-border-radius: 100%;
-                    -ms-border-radius: 100%;
-                     -o-border-radius: 100%;
-                        border-radius: 100%;
-                -webkit-animation: swingBulb .9s ease-in-out 0s infinite alternate;
-                   -moz-animation: swingBulb .9s ease-in-out 0s infinite alternate;
-                    -ms-animation: swingBulb .9s ease-in-out 0s infinite alternate;
-                     -o-animation: swingBulb .9s ease-in-out 0s infinite alternate;
-                        animation: swingBulb .9s ease-in-out 0s infinite alternate;
-            }           
-            input[value="off"]:checked ~
-            label {
-                background: $bg-brand;
-                -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
-                   -moz-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
-                    -ms-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
-                     -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
-                        box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
-            }
-            input[value="on"]:checked ~
-            label {
-                background: $bg-content;
-                -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                   -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                    -ms-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                     -o-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                        box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-            }
 
-            input[value="off"]:checked ~
-            label:after {
-                content: " ";
-                width: 15px;
-                height: 15px;
-                top: 0;
-                position: absolute;
-                left: 0;
-                margin-left: 15px;
-                -webkit-border-radius: 100%;
-                   -moz-border-radius: 100%;
-                    -ms-border-radius: 100%;
-                     -o-border-radius: 100%;
-                        border-radius: 100%;
-                border: 2px solid rgba(255,255,255,0.03);
-            }
-            @-webkit-keyframes swing {
-                from {
-                    -webkit-transform:rotate(5deg);
-                } to {
-                    -webkit-transform:rotate(-5deg);
-                }
-            }
-            @-moz-keyframes swing {
-                from {
-                    -moz-transform:rotate(5deg);
-                } to {
-                    -moz-transform:rotate(-5deg);
-                }
-            }
-            @-ms-keyframes swing {
-                from {
-                    -ms-transform:rotate(5deg);
-                } to {
-                    -ms-transform:rotate(-5deg);
-                }
-            }
-            @-o-keyframes swing {
-                from {
-                    -o-transform:rotate(5deg);
-                } to {
-                    -o-transform:rotate(-5deg);
-                }
-            }
-            @keyframes swing {
-                from {
-                    transform:rotate(5deg);
-                } to {
-                    transform:rotate(-5deg);
-                }
-            }
-            
-            @-webkit-keyframes swingBulb {
-                from {
-                    -webkit-transform: rotate(3deg) translate(-16.4px,-1px);
-                } to {
-                    -webkit-transform: rotate(-3deg) translate(16.4px,-1px);
-                }
-            }
-            @-moz-keyframes swingBulb {
-                from {
-                    -moz-transform: rotate(3deg) translate(-16.4px,-1px);
-                } 
-                to {
-                    -moz-transform: rotate(-3deg) translate(16.4px,-1px);
-                }
-            }
-            @-ms-keyframes swingBulb {
-                from {
-                    -ms-transform: rotate(3deg) translate(-16.4px,-1px);
-                } to {
-                    -ms-transform: rotate(-3deg) translate(16.4px,-1px);
-                }
-            }
-            @-o-keyframes swingBulb {
-                from {
-                    -o-transform: rotate(3deg) translate(-16.4px,-1px);
-                } to {
-                    -o-transform: rotate(-3deg) translate(16.4px,-1px);
-                }
-            }
-            @keyframes swingBulb {
-                from {
-                    transform: rotate(3deg) translate(-16.4px,-1px);
-                } to {
-                    transform: rotate(-3deg) translate(16.4px,-1px);
-                }
-            }
+#lamp-holder {
+    position: fixed;
+    left: 95%;
+    top: 0;
+}
+#wire {
+    position: relative;
+    background-color: #000000;
+    width: 2px;
+    height: 150px;
+    left: 50%;
+    margin-left: 18px;
+    z-index: 1;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-animation: swing .9s ease-in-out 0s infinite alternate;
+    -moz-animation: swing .9s ease-in-out 0s infinite alternate;
+    -ms-animation: swing .9s ease-in-out 0s infinite alternate;
+    -o-animation: swing .9s ease-in-out 0s infinite alternate;
+    animation: swing .9s ease-in-out 0s infinite alternate;
+}
+#wire:after {
+    content: " ";
+    left: -3px;
+    top: 98%;
+    position: absolute;
+    border-bottom: 15px solid #000000;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    height: 0;
+    width: 4px;
+}
+#light {
+    position:relative;
+}
+input[value="off"]:checked ~
+#wire {
+    -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+    -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+    box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+}
+input[value="off"]:checked ~
+#wire:after {
+    -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+    -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+    -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+    -o-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+    box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+}
+input {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    top: 150px;
+    margin-left:-45px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+input[value="on"] {
+    top: 150px;
+}
+input[value="off"] {
+    top: -100px;
+}
+input[value="on"]:checked {
+    top: -100px;
+}
+input[value="on"]:checked + input[value="off"] {
+    top: 150px;
+}
+label {
+    width: 51px;
+    height: 51px;
+    top: 163px;
+    position: absolute;
+    left: 0;
+    margin-left: 4px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation: swingBulb .9s ease-in-out 0s infinite alternate;
+    -moz-animation: swingBulb .9s ease-in-out 0s infinite alternate;
+    -ms-animation: swingBulb .9s ease-in-out 0s infinite alternate;
+    -o-animation: swingBulb .9s ease-in-out 0s infinite alternate;
+    animation: swingBulb .9s ease-in-out 0s infinite alternate;
+}           
+input[value="off"]:checked ~
+label {
+    background: $bg-brand;
+    -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+    -ms-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+    -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+}
+input[value="on"]:checked ~
+label {
+    background: $bg-content;
+    -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+    -ms-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+    -o-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+}
+input[value="off"]:checked ~
+label:after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid rgba(255,255,255,0.03);
+}
+@-webkit-keyframes swing {
+    from {
+        -webkit-transform:rotate(5deg);
+    } to {
+        -webkit-transform:rotate(-5deg);
+    }
+}
+@-moz-keyframes swing {
+    from {
+        -moz-transform:rotate(5deg);
+    } to {
+        -moz-transform:rotate(-5deg);
+    }
+}
+@-ms-keyframes swing {
+    from {
+        -ms-transform:rotate(5deg);
+    } to {
+        -ms-transform:rotate(-5deg);
+    }
+}
+@-o-keyframes swing {
+    from {
+        -o-transform:rotate(5deg);
+    } to {
+        -o-transform:rotate(-5deg);
+    }
+}
+@keyframes swing {
+    from {
+        transform:rotate(5deg);
+    } to {
+        transform:rotate(-5deg);
+    }
+}
+@-webkit-keyframes swingBulb {
+    from {
+        -webkit-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -webkit-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-moz-keyframes swingBulb {
+    from {
+        -moz-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -moz-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-ms-keyframes swingBulb {
+    from {
+        -ms-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -ms-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-o-keyframes swingBulb {
+    from {
+        -o-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -o-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@keyframes swingBulb {
+    from {
+        transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
 .parallax {
 	margin-bottom: $step;
     background-image: url("../img/ist40.jpg"), url("../img/ist25.jpg"), url("../img/ist27.jpg");
@@ -1067,9 +1062,10 @@ header {
             left: 11px;
             * { 
                 fill: $bg-brand;
+            }
+        }
     }
 }
-
 .social {
     display: flex;
     justify-content: space-between;
@@ -1095,19 +1091,18 @@ header {
     color: $bg-brand;
     font-size: 150px;
 }
-.arrow-bottom{
+.arrow-bottom {
     position: relative; 
     top: 98%;
     left: 100%;
     animation: bounce ease 1.5s infinite;
 }
-
 @keyframes bounce {
-  0 {
-    bottom: 0;
-  }
-  100% {
-    bottom: -25px;
-  }
+    0 {
+        bottom: 0;
+    }
+    100% {
+        bottom: -25px;
+    }
 }
 
