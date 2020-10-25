@@ -30,3 +30,5 @@ $(function(){
 		autoPlayPause: 2000
 	});
 });
+
+ 
