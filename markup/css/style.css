@@ -941,12 +941,4 @@ label:after {
 .arrow-bottom {
   position: relative;
   top: 98%;
-  left: 100%;
-  -webkit-animation: bounce ease 1.5s infinite;
-          animation: bounce ease 1.5s infinite; }
-
-@keyframes bounce {
-  0 {
-    bottom: 0; }
-  100% {
-    bottom: -25px; } }
+  left: 100%; }
