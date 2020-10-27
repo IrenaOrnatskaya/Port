@@ -912,8 +912,8 @@ label:after {
 	border-bottom-width: 0px;
 	border-right-width: 0px;
 	border-top-color: #000;
-	opacity: 0;
-	animation: showText2 0.5s 1.5s linear forwards;
+    opacity: 0;
+	animation: showTex 0.5s 1.5s linear forwards;
 }
 .bar .progress-line span:after {
 	position: absolute;
