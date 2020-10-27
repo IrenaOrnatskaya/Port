@@ -9,10 +9,10 @@ module.exports = {
   },
   dest: {
     root: './markup/',
-    css: './markup/css/',
-    img: './markup/img/',
-    js: './markup/js/',
-    fonts: './markup/fonts/'
+    css: './markupcss/',
+    img: './markupimg/',
+    js: './markupjs/',
+    fonts: './fonts/'
   },
   watch: {
     html: './source/views/{layouts,partials,helpers,data}/**/*',
