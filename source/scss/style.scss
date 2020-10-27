@@ -813,7 +813,7 @@ label:after {
 
 .parallax {
 	margin-bottom: $step;
-    background-image: url("../img/ist40.jpg"), url("../img/ist25.jpg"), url("../img/ist27.jpg");
+    background-image: url("img/ist40.jpg"), url("img/ist25.jpg"), url("img/ist27.jpg");
     background-attachment: fixed;
     background-position: center, left, right;
     height: 100vh;
