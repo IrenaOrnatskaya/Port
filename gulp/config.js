@@ -4,7 +4,7 @@ module.exports = {
     html: './source/views/',
     scss: './source/scss/style.scss',
     js: './source/js/**/*',
-    img: './img/**/*',
+    img: './src/img/**/*',
     helpers: './gulp/helpers/'
   },
   dest: {
