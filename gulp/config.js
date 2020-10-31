@@ -10,7 +10,7 @@ module.exports = {
   dest: {
     root: './',
     css: './css/',
-    img: './img/',
+    img: './source/img/',
     js: './js/',
     fonts: './fonts/'
   },
