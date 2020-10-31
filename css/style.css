@@ -660,7 +660,7 @@ label:after {
 
 .parallax {
   margin-bottom: 80px;
-  background-image: url("../img/ist40.jpeg"), url("../img/ist25.jpeg"), url("../img/ist27.jpeg");
+  background-image: url("../img/ist40.png"), url("../img/ist25.png"), url("../img/ist27.png");
   background-attachment: fixed;
   background-position: center, left, right;
   height: 100vh;
@@ -812,7 +812,7 @@ label:after {
 
 .parallax-two {
   margin-bottom: 80px;
-  background-image: url("../img/ist60.jpeg"), url("../img/ist12.jpeg"), url("../img/ist10.jpeg");
+  background-image: url("../img/ist60.png"), url("../img/ist12.png"), url("../img/ist10.png");
   background-attachment: fixed;
   height: 100vh;
   background-position: left, center, right;
@@ -851,7 +851,7 @@ label:after {
 
 .parallax-three {
   margin-bottom: 80px;
-  background-image: url("../img/ist.jpeg");
+  background-image: url("../img/ist.png");
   background-attachment: fixed;
   height: 100vh;
   background-repeat: no-repeat;
