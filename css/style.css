@@ -660,7 +660,7 @@ label:after {
 
 .parallax {
   margin-bottom: 80px;
-  background-image: url("../img/ist40.jpg"), url("../img/ist25.jpeg"), url("../img/ist27.jpg");
+  background-image: url("./img/ist40.jpg"), url("./img/ist25.jpeg"), url("./img/ist27.jpg");
   background-attachment: fixed;
   background-position: center, left, right;
   height: 100vh;
@@ -812,7 +812,7 @@ label:after {
 
 .parallax-two {
   margin-bottom: 80px;
-  background-image: url("../img/ist60.jpeg"), url("../img/ist12.jpeg"), url("../img/ist10.jpeg");
+  background-image: url("./img/ist60.jpeg"), url("./img/ist12.jpeg"), url("./img/ist10.jpeg");
   background-attachment: fixed;
   height: 100vh;
   background-position: left, center, right;
