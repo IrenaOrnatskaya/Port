@@ -8,10 +8,10 @@ module.exports = {
     helpers: './gulp/helpers/'
   },
   dest: {
-    root: './',
-    css: './css/',
-    img: './img/**/*',
-    js: './js/',
+    root: './docs/',
+    css: './docs/css/',
+    img: './docs/img/**/*',
+    js: './docs/js/',
     fonts: './fonts/'
   },
   watch: {
@@ -19,6 +19,6 @@ module.exports = {
     scss: './source/scss/**/*',
     js: './source/js/**/*.js',
     img: './img/**/*',
-    root: './',
+    root: './docs/',
   }
 };
