@@ -812,7 +812,7 @@ label:after {
 
 .parallax-two {
   margin-bottom: 80px;
-  background-image: url("../img/ist60.png"), url("../img/ist12.png"), url("../img/ist10.png");
+  background-image: url("../img/ist60.png"), url("../img/Ist12.png"), url("../img/ist10.png");
   background-attachment: fixed;
   height: 100vh;
   background-position: left, center, right;
