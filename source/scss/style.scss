@@ -1016,79 +1016,6 @@ label:after {
 // timeline
 
 
-#timeline {
-    overflow: hidden;
-    margin: 100px auto;
-    display: block;
-    border-radius: 10px;
-    padding: 80px 100px;
-    box-shadow: 7px 9px 17px 0 rgba(85, 128, 173, .2);
-    margin-bottom: $step;
-    h2 {
-        font-size: 80px;
-        margin: 0 0 40px;
-        color: $brand-color;
-    }
-}
-#dates {
-    display: flex;
-    padding-bottom: 60px;
-    li {
-        list-style: none;
-        width: 100px;
-        height: 60px;
-        font-size: 24px;
-        text-align: center;
-        background: url('../img/circle.svg') center bottom no-repeat;
-    }
-    a {
-        line-height: 38px;
-        padding-bottom: 10px;
-    }
-    .selected {
-        font-size: 42px;
-    }
-}
-#issues {
-    width: 800px;
-    overflow: hidden;
-    white-space: nowrap;
-    li {
-        width: 800px;
-        display: inline-block;
-        list-style: none;
-        margin: 20px 0;
-        p {
-            display: block;
-            font-size: 22px;
-            font-family: playfair display, serif;
-            line-height: 30px;
-            .location {
-                color: $bg-brand;
-            }
-        }
-        h1 {
-            color: #ffcc00;
-            font-size: 48px;
-            margin: 20px 0;
-        }
-    }
-    date {
-        color: $brand-color;
-        font-size: 26px;
-    }
-    .certificate {
-        color: $bg-brand;
-        svg { 
-            position: relative;
-            top: 16px;
-            left: 11px;
-            * { 
-                fill: $bg-brand;
-            }
-        }
-    }
-}
 .social {
     display: flex;
     justify-content: space-between;
@@ -1114,4 +1041,169 @@ label:after {
     position: relative; 
     top: 98%;
     left: 100%;
+}
+.timeline {
+  outline: 1px dashed hotpink;
+  max-width: 1600px;
+  margin-bottom: 100px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  padding: 80px 100px;
+}
+.timeline__year {
+  margin-bottom: 32px;
+  font-size: 72px;
+  color: #000;
+  text-align: center;
+}
+.timeline__control {
+  outline: 1px dotted red;
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  color: $bg-brand;
+  font-size: 64px;
+  line-height: 65px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+}
+date {
+    color: $brand-color;
+}
+@media (max-width:400px) {
+  .timeline__control--back {
+    left: 0.5rem;
+  }
+}
+.timeline__control--back::before {
+  content: '{';
+}
+.timeline__control--forward {
+  right: 2rem;
+}
+@media (max-width:400px) {
+  .timeline__control--forward {
+    right: 0.5rem;
+  }
+}
+.timeline__control--forward::before {
+  content: '}';
+}
+.timeline__control.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.timeline__dots {
+  margin: 0 auto 48px auto;
+  max-width: calc(100% - 100px);
+  overflow: hidden;
+  height: 72px;
+  position: relative;
+  outline: 1px dotted red;
+}
+@media (max-width:400px) {
+  .timeline__dots {
+    max-width: calc(100% - 50px);
+  }
+}
+.timeline__dots::before,
+.timeline__dots::after {
+  content: '\0020';
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 20px;
+  height: 100%;
+}
+
+.timeline__slider {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 0.5rem 0;
+  font-size: 0;
+  text-align: center;
+  white-space: nowrap;
+  transition: left 0.5s;
+}
+.timeline__slider.is-touching {
+  transition: none;
+}
+.timeline__dot {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  margin: 0 24px;
+  background-color: $brand-color;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.timeline__dot::after {
+  content: attr(data-year);
+  display: block;
+  width: 200%;
+  position: absolute;
+  bottom: -20px;
+  left: -50%;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: all 0.25s;
+}
+.timeline__dot.is-active {
+  background-color: $bg-brand;
+  box-shadow: 0 0 0 2px $bg-brand, 0 0 0 8px white, 0 0 20px 4px rgba(0, 0, 0, 0.25);
+}
+.timeline__dot.is-active::after {
+  opacity: 0;
+  transform: translateY(-8px) scale(0.5);
+}
+.timeline__text {
+  outline: 1px dashed green;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 1.75;
+  position: relative;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.timeline__textitem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s;
+}
+.timeline__textitem.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+* {
+  outline: 0 !important;
+}
+.certificate-basic:hover {
+    color: $bg-brand;
+}
+.social-info:hover {
+    fill: $bg-brand;
+    transition: 0.7s;
+    color: $bg-brand;
+}
+.certificate {
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
