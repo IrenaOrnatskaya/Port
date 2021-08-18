@@ -1073,14 +1073,23 @@ date {
 .column {
   display: flex;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 50px; }
+
+.big-image {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 20px; }
+
+.controls {
+  display: flex; }
 
 /* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -1091,11 +1100,14 @@ date {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.img-slider {
+  width: 100%;
+  max-width: 300px; }
 
 /* The Close Button */
 .close {
@@ -1121,9 +1133,9 @@ date {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
-  padding: 16px;
+  padding: 32px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -1139,6 +1151,9 @@ date {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px; }
+
+.prev {
+  left: 0; }
 
 .certificates-images {
   display: block;
@@ -1165,10 +1180,14 @@ date {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
-  color: white; }
+  color: white;
+  margin-bottom: 20px; }
 
 img.demo {
-  opacity: 0.6; }
+  opacity: 0.6;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 20px; }
 
 .active,
 .demo:hover {
