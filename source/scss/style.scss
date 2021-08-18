@@ -874,7 +874,7 @@ label:after {
 }
 .bar .progress-line span {
 	height: 100%;
-	width: 80%;
+	width: 0;
 	background: $bg-brand;
 	border-radius: 10px;
 	position: absolute;
@@ -889,33 +889,30 @@ label:after {
 		transform: scaleX(1);
 	}
 }
-.skills:hover .progress-line .html span{
+.skills:hover .progress-line.html span{
 	width: 100%;
-    transition: 1s;
 }
-.progress-line:hover .javascript span {
+.skills:hover .progress-line.javascript span {
     width: 80%;
-    transition: 1s;
-};
-.progress-line:hover .bootstrap span{
-	width: 70%;
 }
-.progress-line:hover .responsive span {
+.skills:hover .progress-line.bootstrap span{
 	width: 100%;
 }
-.progress-line.jquery span {
+.skills:hover .progress-line.responsive span {
+	width: 100%;
+}
+.skills:hover .progress-line.jquery span {
 	width: 70%;
 }
-.progress-line.scss span {
+.skills:hover .progress-line.scss span {
 	width: 70%;
 }
-.progress-line.gulp span {
+.skills:hover .progress-line.gulp span {
 	width: 40%;
 }
-.progress-line.git span {
+.skills:hover .progress-line.git span {
 	width: 60%;
 }
-
 .bar .progress-line span:before {
 	position: absolute;
 	content: "";
@@ -951,13 +948,12 @@ label:after {
 }
 .progress-line.html span:after {
 	content:"100%";
-
 }
 .progress-line.javascript span:after {
     content:"80%";
 }
 .progress-line.bootstrap span:after {
-	content:"70%";
+	content:"100%";
 }
 .progress-line.responsive span:after {
 	content:"100%";
@@ -966,7 +962,7 @@ label:after {
 	content:"70%";
 }
 .progress-line.scss span:after {
-	content:"90%";
+	content:"70%";
 }
 .progress-line.gulp span:after {
 	content:"40%";
