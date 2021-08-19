@@ -685,7 +685,7 @@ label:after {
       margin-top: 0; }
     .skills .bar .progress-line {
       position: relative;
-      height: 10px;
+      height: 11px;
       width: 100%;
       transform: scaleX(0);
       transform-origin: left;
@@ -718,7 +718,7 @@ label:after {
     opacity: 1; } }
 
 .bar .progress-line span {
-  height: 100%;
+  height: 12px;
   width: 0;
   background: #ee6c6c;
   border-radius: 10px;
@@ -832,7 +832,8 @@ label:after {
   background-size: cover; }
 
 .projects {
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   padding: 80px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -860,6 +861,89 @@ label:after {
 .dot-coral {
   color: #ee6c6c;
   font-size: 150px; }
+
+.slider {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
+
+.wrappers {
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  z-index: 1; }
+
+.slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -400px;
+  width: 10000px; }
+
+.slides.shifting {
+  transition: left .2s ease-out; }
+
+.slide {
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+  background: #FFCF47;
+  border-radius: 2px;
+  background-size: contain; }
+
+.slider.loaded .slide:nth-child(2),
+.slider.loaded .slide:nth-child(7) {
+  background: #FFCF47; }
+
+.slider.loaded .slide:nth-child(1),
+.slider.loaded .slide:nth-child(6) {
+  background: #7ADCEF; }
+
+.slider.loaded .slide:nth-child(3) {
+  background: #3CFF96; }
+
+.slider.loaded .slide:nth-child(4) {
+  background: #a78df5; }
+
+.slider.loaded .slide:nth-child(5) {
+  background: #ff8686; }
+
+.controlss {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2; }
+
+.previous,
+.nextt {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+
+.previous {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -20px; }
+
+.nextt {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -20px; }
+
+.previous:active,
+.nextt:active {
+  transform: scale(0.8); }
 
 .parallax-three {
   margin-bottom: 80px;
