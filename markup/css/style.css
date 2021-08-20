@@ -624,13 +624,15 @@ label:after {
     width: 300px; } }
 
 /* mobile */
-@media only screen and (min-width: 376px) and (max-width: 447px) {
+@media only screen and (min-width: 376px) and (max-width: 415px) {
   .hero-text {
     font-size: 30px;
     width: 150px; }
   .feature {
     font-size: 30px;
-    width: 150px; } }
+    width: 150px; }
+  .header .burger-menu {
+    top: 27%; } }
 
 .parallax {
   margin-bottom: 80px;

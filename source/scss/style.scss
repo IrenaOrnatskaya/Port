@@ -774,7 +774,7 @@ label:after {
 }
 }
 /* mobile */
-@media only screen and (min-width: 376px) and (max-width: 447px) {
+@media only screen and (min-width: 376px) and (max-width: 415px) {
     .hero-text {
     font-size: 30px;
     width: 150px;
@@ -782,6 +782,9 @@ label:after {
 .feature {
     font-size: 30px;
     width: 150px;
+}
+.header .burger-menu {
+    top: 27%;
 }
 }
 
