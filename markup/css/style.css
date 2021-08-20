@@ -248,7 +248,8 @@ header .burger-menu {
     position: absolute;
     left: 0;
     left: 10px;
-    top: 12px; }
+    top: 12px;
+    transition: 0.7s; }
 
 .menu-open color-boxes {
   transition: 0.5s all cubic-bezier(0.87, -0.41, 0.19, 1.44);
