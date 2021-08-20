@@ -625,6 +625,10 @@ label:after {
 
 /* mobile */
 @media only screen and (min-width: 376px) and (max-width: 415px) {
+  .logo {
+    padding: 30px 40px 30px 50px; }
+  .wrapper {
+    padding: 50px; }
   .hero-text {
     font-size: 30px;
     width: 150px; }
@@ -632,7 +636,8 @@ label:after {
     font-size: 30px;
     width: 150px; }
   .header .burger-menu {
-    top: 27%; } }
+    top: 27%;
+    left: 27px; } }
 
 .parallax {
   margin-bottom: 80px;
