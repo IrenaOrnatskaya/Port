@@ -252,7 +252,7 @@ header .burger-menu {
 
 .menu-open color-boxes {
   transition: 0.5s all cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  transition-duration: 0.8s;
+  transition-duration: 0.7s;
   position: -webkit-sticky;
   position: sticky;
   top: 0; }
@@ -260,11 +260,13 @@ header .burger-menu {
 .menu-open .burger-menu-line {
   background: #ee6c6c;
   transform: rotate(-45deg);
+  transition: 0.7s;
   z-index: 100; }
   .menu-open .burger-menu-line:before {
     background: #ee6c6c;
     transform: rotate(90deg);
     position: relative;
+    transition: 0.7s;
     top: 0;
     left: 0; }
   .menu-open .burger-menu-line:after {

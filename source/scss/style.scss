@@ -225,18 +225,20 @@ header {
     .menu-open {
         color-boxes {
         transition: .5s all cubic-bezier(.87,-.41,.19,1.44);
-        transition-duration: 0.8s;
+        transition-duration: 0.7s;
         position: sticky;
         top: 0;
     }
     .burger-menu-line {
         background: $bg-brand;
         transform: rotate(-45deg);
+        transition: 0.7s;
         z-index: 100;
         &:before {
             background: $bg-brand;
             transform: rotate(90deg);
             position: relative;
+            transition: 0.7s;
             top: 0;
             left: 0;
         }
