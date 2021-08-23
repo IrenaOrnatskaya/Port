@@ -288,7 +288,7 @@ a {
 	background-color: #EEF2F6;
 	display: block;
 	position: relative;
-	margin: 0 auto;
+
 }
 .menu-open .email-envelope:before {
 	content: '';
@@ -763,37 +763,7 @@ label:after {
         transform: rotate(-3deg) translate(16.4px,-1px);
     }
 }
-@media only screen and (min-width: 376px) and (max-width: 1165px) {
-.hero-text {
-    font-size: 50px;
-    width: 300px;
-}
-.feature {
-    font-size: 50px;
-    width: 300px;
-}
-}
-/* mobile */
-@media only screen and (min-width: 376px) and (max-width: 415px) {
-    .logo {
-       padding: 30px 40px 30px 50px;
-    }
-    .wrapper {
-        padding: 50px;
-    }
-    .hero-text {
-    font-size: 30px;
-    width: 150px;
-}
-.feature {
-    font-size: 30px;
-    width: 150px;
-}
-.header .burger-menu {
-    top: 27%;
-    left: 27px;
-}
-}
+
 
 .parallax {
 	margin-bottom: $step;
@@ -828,9 +798,7 @@ label:after {
 	    }
 	}
 }
-.skills h2 {
-	font-size: $step;
-}
+
 .skills .bar .info-bar {
 	margin-bottom: 5px;
 }
@@ -948,11 +916,12 @@ label:after {
 
 .parallax-two {
     margin-bottom: 80px;
-    background-image: url("../img/Ist2828.png");
+    background-image: url("../img/istt.png");
     background-attachment: fixed;
-    height: 100vh;
+    height: 100vh; 
     background-repeat: no-repeat;
     background-size: cover;
+  
 
 }
 
@@ -966,16 +935,11 @@ label:after {
 	margin-bottom: $step;
 	h2 {
         color: $brand-color;
-		font-size: $step;
         margin-bottom: $step;
 	}
     h3 {
         margin-bottom: 30px;
         font-weight: 800;
-    }
-	.projects-library {
-		font-size: 32px;
-		margin-bottom: $step;
     }
     a {
         color: $bg-brand;
@@ -995,102 +959,94 @@ label:after {
     font-size: 150px;
 }
 
+/*------------SLIDER----------->>>>>>>>>*/
+.slick-slider{
+    position: relative;
 
+    .slick-arrow{
+        top: 35%;
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        transform: translateY(-40%);
+        border: none;
+        outline: none;
+        font-size: 0;
+        background: url("../img/arrleft.png") no-repeat;
+        background-size: contain;
+        cursor: pointer;
 
-.slider {
-  position: relative;
-  
-  margin: 0 auto;
-  width: $slider-width;
-  height: $slider-height;
-  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+        &.slick-next{
+            left: -60px;
+        }
+        &.slick-prev {   
+            right: -60px;
+            transform: translateY(-50%) scale(-1,1);
+        }
+
+    }
+
+    .slick-slide {
+        outline: none;
+        margin: 0 auto;
+
+        img{
+            max-width: 100%;
+            margin: 165px auto;
+            width: 320px !important;
+        }
+
+        .caption{
+            opacity: 0;
+            text-align: center;
+            padding-top: 10px;
+
+            a{
+                display: inline-block;
+                
+                font:16px;
+            }
+
+            h3{
+                font-size: 20px;
+                font-weight: 900;
+            }
+
+            span{
+                font-size:18px;
+                display: block;
+            }
+        }
+
+        &.slick-center{
+            opacity: 1;
+            transition: opacity .4s ease-in;
+            position: relative;
+            z-index: 2;
+
+            img{
+                transform: scale(2.5);
+                transition: transform .4s ease-in;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, -16px -25px 26px 7px rgba(85,128,173,0); 
+                box-shadow: 0px 10px 13px -7px #000000, -16px -25px 26px 7px rgba(85,128,173,0);
+            }
+
+            .caption{
+                opacity: 1;
+                transition: opacity .4s ease-in;
+                
+            }
+        }
+    }
 }
 
-.wrappers {
-  overflow: hidden;
-  position: relative;
-  width: $slider-width;
-  height: $slider-height;
-  z-index: 1;
+.slick-slide:not(.slick-center) {
+    opacity: 0.5;
+    transition: opacity .4s ease-in;    
 }
 
-.slides {
-  display: flex;
-  position: relative;
-  top: 0;
-  left: -$slider-width;
-  width: 10000px;
-}
 
-.slides.shifting {
-  transition: left .2s ease-out;
-}
 
-.slide {
-  width: $slider-width;
-  height: $slider-height;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  transition: all 1s;
-  position: relative;
-  background: #FFCF47;
-  border-radius: 2px;
-  background-size: contain;
-}
-
-.slider.loaded {
-  .slide:nth-child(2),
-  .slide:nth-child(7) { background: #FFCF47 }
-  .slide:nth-child(1),
-  .slide:nth-child(6) { background: #7ADCEF }
-  .slide:nth-child(3) { background: #3CFF96 }
-  .slide:nth-child(4) { background: #a78df5 }
-  .slide:nth-child(5) { background: #ff8686 }
-}
-
-.controlss {
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50px;
-  margin-top: -20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
-
-.previous,
-.nextt {
-  background-size: 22px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.previous {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-  left: -20px;
-}
-
-.nextt {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-  right: -20px;
-}
-
-.previous:active,
-.nextt:active {
-  transform: scale(.8);
-}
-.parallax-three {
-	margin-bottom: $step;
-    background-image: url("../img/ist56.png");
-    background-attachment: fixed;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 // timeline
 
@@ -1117,6 +1073,7 @@ label:after {
     color: $brand-color;
 }
 .arrow-bottom {
+    font-size: 40px;
     position: relative; 
     top: 98%;
     left: 100%;
@@ -1301,9 +1258,18 @@ date {
    font-size: $step; 
    margin-bottom: 50px;
    line-height: $step;
+   color: #5580ad;
 }
-
-
+.arrleft {
+    width: 45px;
+}
+.arrright {
+    width: 45px;
+    transform: scale(-1,1);
+}
+.closebtn {
+    width: 35px;
+}
 
 
 /* Create four equal columns that floats next to eachother */
@@ -1350,12 +1316,9 @@ date {
 }
 /* The Close Button */
 .close {
-  color: white;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 25px;
-  font-size: 35px;
-  font-weight: bold;
 }
 
 .close:hover,
@@ -1446,5 +1409,110 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.github-link {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+@media only screen and (min-width: 376px) and (max-width: 1165px) {
+.hero-text {
+    font-size: 50px;
+    width: 300px;
+}
+.feature {
+    font-size: 50px;
+    width: 300px;
+}
+
+.parallax {
+    display: none;
+}
+.parallax-two {
+    display: none;
+}
+.titles {
+    font-size: 45px;
+}
+.box {
+     padding: 40px 50px;
+}
+.skills .progress-line.html span{
+    width: 100%;
+}
+.skills .progress-line.javascript span {
+    width: 80%;
+}
+.skills .progress-line.bootstrap span{
+    width: 100%;
+}
+.skills .progress-line.responsive span {
+    width: 100%;
+}
+.skills .progress-line.jquery span {
+    width: 70%;
+}
+.skills .progress-line.scss span {
+    width: 70%;
+}
+.skills .progress-line.gulp span {
+    width: 40%;
+}
+.skills .progress-line.git span {
+    width: 60%;
+}
+.img-slider {
+    max-width: 250px;
+}
+.slick-slider .slick-slide.slick-center img{
+    transform: scale(2.0);
+}
+.github-link {
+    font-size: 30px;
+
+}
+}
+/* mobile */
+@media only screen and (min-width: 375px) and (max-width: 415px) {
+    .logo {
+       padding: 30px 40px 30px 50px;
+    }
+    .wrapper {
+        padding: 50px;
+    }
+    .hero-text {
+    font-size: 30px;
+    width: 150px;
+}
+.feature {
+    font-size: 30px;
+    width: 150px;
+}
+.header .burger-menu {
+    top: 27%;
+    left: 27px;
+}
+.parallax {
+    display: none;
+}
+.parallax-two {
+    display: none;
+}
+.titles {
+    font-size: 30px;
+    line-height: 50px;
+}
+.box {
+     padding: 20px 25px;
+}
+.projects {
+    display: none;
+}
+.column {
+    flex-direction: column;
+}
+.github-link {
+    font-size: 17px;
+}
 }
 

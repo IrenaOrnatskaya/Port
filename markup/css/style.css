@@ -300,8 +300,7 @@ a {
   height: 85px;
   background-color: #EEF2F6;
   display: block;
-  position: relative;
-  margin: 0 auto; }
+  position: relative; }
 
 .menu-open .email-envelope:before {
   content: '';
@@ -615,30 +614,6 @@ label:after {
   to {
     transform: rotate(-3deg) translate(16.4px, -1px); } }
 
-@media only screen and (min-width: 376px) and (max-width: 1165px) {
-  .hero-text {
-    font-size: 50px;
-    width: 300px; }
-  .feature {
-    font-size: 50px;
-    width: 300px; } }
-
-/* mobile */
-@media only screen and (min-width: 376px) and (max-width: 415px) {
-  .logo {
-    padding: 30px 40px 30px 50px; }
-  .wrapper {
-    padding: 50px; }
-  .hero-text {
-    font-size: 30px;
-    width: 150px; }
-  .feature {
-    font-size: 30px;
-    width: 150px; }
-  .header .burger-menu {
-    top: 27%;
-    left: 27px; } }
-
 .parallax {
   margin-bottom: 80px;
   background-image: url("../img/Ist11.png");
@@ -667,9 +642,6 @@ label:after {
       -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
               animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
       border-radius: 10px; }
-
-.skills h2 {
-  font-size: 80px; }
 
 .skills .bar .info-bar {
   margin-bottom: 5px; }
@@ -798,7 +770,7 @@ label:after {
 
 .parallax-two {
   margin-bottom: 80px;
-  background-image: url("../img/Ist2828.png");
+  background-image: url("../img/istt.png");
   background-attachment: fixed;
   height: 100vh;
   background-repeat: no-repeat;
@@ -813,14 +785,10 @@ label:after {
   margin-bottom: 80px; }
   .projects h2 {
     color: #5580ad;
-    font-size: 80px;
     margin-bottom: 80px; }
   .projects h3 {
     margin-bottom: 30px;
     font-weight: 800; }
-  .projects .projects-library {
-    font-size: 32px;
-    margin-bottom: 80px; }
   .projects a {
     color: #ee6c6c;
     font-size: 20px; }
@@ -835,96 +803,62 @@ label:after {
   color: #ee6c6c;
   font-size: 150px; }
 
-.slider {
-  position: relative;
-  margin: 0 auto;
-  width: 400px;
-  height: 300px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
+/*------------SLIDER----------->>>>>>>>>*/
+.slick-slider {
+  position: relative; }
+  .slick-slider .slick-arrow {
+    top: 35%;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    transform: translateY(-40%);
+    border: none;
+    outline: none;
+    font-size: 0;
+    background: url("../img/arrleft.png") no-repeat;
+    background-size: contain;
+    cursor: pointer; }
+    .slick-slider .slick-arrow.slick-next {
+      left: -60px; }
+    .slick-slider .slick-arrow.slick-prev {
+      right: -60px;
+      transform: translateY(-50%) scale(-1, 1); }
+  .slick-slider .slick-slide {
+    outline: none;
+    margin: 0 auto; }
+    .slick-slider .slick-slide img {
+      max-width: 100%;
+      margin: 165px auto;
+      width: 320px !important; }
+    .slick-slider .slick-slide .caption {
+      opacity: 0;
+      text-align: center;
+      padding-top: 10px; }
+      .slick-slider .slick-slide .caption a {
+        display: inline-block;
+        font: 16px; }
+      .slick-slider .slick-slide .caption h3 {
+        font-size: 20px;
+        font-weight: 900; }
+      .slick-slider .slick-slide .caption span {
+        font-size: 18px;
+        display: block; }
+    .slick-slider .slick-slide.slick-center {
+      opacity: 1;
+      transition: opacity .4s ease-in;
+      position: relative;
+      z-index: 2; }
+      .slick-slider .slick-slide.slick-center img {
+        transform: scale(2.5);
+        transition: transform .4s ease-in;
+        box-shadow: 0px 10px 13px -7px #000000, -16px -25px 26px 7px rgba(85, 128, 173, 0); }
+      .slick-slider .slick-slide.slick-center .caption {
+        opacity: 1;
+        transition: opacity .4s ease-in; }
 
-.wrappers {
-  overflow: hidden;
-  position: relative;
-  width: 400px;
-  height: 300px;
-  z-index: 1; }
-
-.slides {
-  display: flex;
-  position: relative;
-  top: 0;
-  left: -400px;
-  width: 10000px; }
-
-.slides.shifting {
-  transition: left .2s ease-out; }
-
-.slide {
-  width: 400px;
-  height: 300px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  transition: all 1s;
-  position: relative;
-  background: #FFCF47;
-  border-radius: 2px;
-  background-size: contain; }
-
-.slider.loaded .slide:nth-child(2),
-.slider.loaded .slide:nth-child(7) {
-  background: #FFCF47; }
-
-.slider.loaded .slide:nth-child(1),
-.slider.loaded .slide:nth-child(6) {
-  background: #7ADCEF; }
-
-.slider.loaded .slide:nth-child(3) {
-  background: #3CFF96; }
-
-.slider.loaded .slide:nth-child(4) {
-  background: #a78df5; }
-
-.slider.loaded .slide:nth-child(5) {
-  background: #ff8686; }
-
-.controlss {
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50px;
-  margin-top: -20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 2; }
-
-.previous,
-.nextt {
-  background-size: 22px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer; }
-
-.previous {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-  left: -20px; }
-
-.nextt {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-  right: -20px; }
-
-.previous:active,
-.nextt:active {
-  transform: scale(0.8); }
-
-.parallax-three {
-  margin-bottom: 80px;
-  background-image: url("../img/ist56.png");
-  background-attachment: fixed;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.slick-slide:not(.slick-center) {
+  opacity: 0.5;
+  transition: opacity .4s ease-in; }
 
 .social {
   display: flex;
@@ -947,6 +881,7 @@ label:after {
   color: #5580ad; }
 
 .arrow-bottom {
+  font-size: 40px;
   position: relative;
   top: 98%;
   left: 100%; }
@@ -1122,7 +1057,18 @@ date {
 .titles {
   font-size: 80px;
   margin-bottom: 50px;
-  line-height: 80px; }
+  line-height: 80px;
+  color: #5580ad; }
+
+.arrleft {
+  width: 45px; }
+
+.arrright {
+  width: 45px;
+  transform: scale(-1, 1); }
+
+.closebtn {
+  width: 35px; }
 
 /* Create four equal columns that floats next to eachother */
 .column {
@@ -1166,12 +1112,9 @@ date {
 
 /* The Close Button */
 .close {
-  color: white;
   position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold; }
+  top: 20px;
+  right: 25px; }
 
 .close:hover,
 .close:focus {
@@ -1253,3 +1196,77 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.github-link {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center; }
+
+@media only screen and (min-width: 376px) and (max-width: 1165px) {
+  .hero-text {
+    font-size: 50px;
+    width: 300px; }
+  .feature {
+    font-size: 50px;
+    width: 300px; }
+  .parallax {
+    display: none; }
+  .parallax-two {
+    display: none; }
+  .titles {
+    font-size: 45px; }
+  .box {
+    padding: 40px 50px; }
+  .skills .progress-line.html span {
+    width: 100%; }
+  .skills .progress-line.javascript span {
+    width: 80%; }
+  .skills .progress-line.bootstrap span {
+    width: 100%; }
+  .skills .progress-line.responsive span {
+    width: 100%; }
+  .skills .progress-line.jquery span {
+    width: 70%; }
+  .skills .progress-line.scss span {
+    width: 70%; }
+  .skills .progress-line.gulp span {
+    width: 40%; }
+  .skills .progress-line.git span {
+    width: 60%; }
+  .img-slider {
+    max-width: 250px; }
+  .slick-slider .slick-slide.slick-center img {
+    transform: scale(2); }
+  .github-link {
+    font-size: 30px; } }
+
+/* mobile */
+@media only screen and (min-width: 375px) and (max-width: 415px) {
+  .logo {
+    padding: 30px 40px 30px 50px; }
+  .wrapper {
+    padding: 50px; }
+  .hero-text {
+    font-size: 30px;
+    width: 150px; }
+  .feature {
+    font-size: 30px;
+    width: 150px; }
+  .header .burger-menu {
+    top: 27%;
+    left: 27px; }
+  .parallax {
+    display: none; }
+  .parallax-two {
+    display: none; }
+  .titles {
+    font-size: 30px;
+    line-height: 50px; }
+  .box {
+    padding: 20px 25px; }
+  .projects {
+    display: none; }
+  .column {
+    flex-direction: column; }
+  .github-link {
+    font-size: 17px; } }
