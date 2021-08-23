@@ -1253,8 +1253,9 @@ img.hover-shadow {
     font-size: 30px;
     width: 150px; }
   .header .burger-menu {
-    top: 27%;
-    left: 27px; }
+    top: 3%;
+    left: 74%;
+    z-index: 1000; }
   .parallax {
     display: none; }
   .parallax-two {

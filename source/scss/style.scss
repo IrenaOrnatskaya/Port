@@ -1489,8 +1489,9 @@ img.hover-shadow {
     width: 150px;
 }
 .header .burger-menu {
-    top: 27%;
-    left: 27px;
+    top: 3%;
+    left: 74%;
+    z-index: 1000;
 }
 .parallax {
     display: none;
