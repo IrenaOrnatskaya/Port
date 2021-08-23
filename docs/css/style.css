@@ -1243,18 +1243,24 @@ img.hover-shadow {
 /* mobile */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
   .logo {
-    padding: 30px 40px 30px 50px; }
+    padding: 30px 40px 30px 50px;
+    text-align: center; }
   .wrapper {
     padding: 50px; }
   .hero-text {
     font-size: 30px;
     width: 150px; }
+  .links {
+    right: 8px; }
   .feature {
     font-size: 30px;
     width: 150px; }
+  #lamp-holder {
+    left: 83%; }
   .header .burger-menu {
-    top: 27%;
-    left: 27px; }
+    top: 3%;
+    left: 5%;
+    z-index: 1000; }
   .parallax {
     display: none; }
   .parallax-two {
