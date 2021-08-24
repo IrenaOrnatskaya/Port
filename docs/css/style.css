@@ -170,6 +170,30 @@ a {
   cursor: pointer;
   z-index: 50; }
 
+.hero-animation {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  transition: color 1s; }
+
+.hero:after {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: #5580ad;
+  transition: all 1s; }
+
+.hero:hover:after {
+  top: 0;
+  height: 100%; }
+
+.hero:hover .hero-animation {
+  color: #555; }
+
 .burger-menu .burger-menu-line {
   display: block;
   width: 48px;
@@ -366,8 +390,8 @@ a {
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 102%;
-  bottom: -2%;
+  right: 0%;
+  bottom: -3%;
   z-index: 15; }
 
 .arrow svg {
@@ -1192,19 +1216,37 @@ img.hover-shadow {
   font-weight: 400;
   text-align: center; }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .projects {
+    display: none; } }
+
 @media only screen and (min-width: 376px) and (max-width: 1165px) {
+  .wrapper {
+    padding: 30px; }
   .hero-text {
     font-size: 50px;
     width: 300px; }
+  .logo {
+    padding: 40px 31px; }
   .feature {
     font-size: 50px;
     width: 300px; }
+  #lamp-holder {
+    left: 90%; }
   .parallax {
     display: none; }
   .parallax-two {
     display: none; }
   .titles {
     font-size: 45px; }
+  .links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    right: 84px;
+    z-index: 3000; }
+  .links li {
+    margin: 25px 8px; }
   .box {
     padding: 40px 50px; }
   .skills .progress-line.html span {
@@ -1229,7 +1271,9 @@ img.hover-shadow {
   .slick-slider .slick-slide.slick-center img {
     transform: scale(2); }
   .github-link {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .header .burger-menu {
+    left: 7px; } }
 
 /* mobile */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
@@ -1237,23 +1281,32 @@ img.hover-shadow {
     padding: 30px 40px 30px 50px;
     text-align: center; }
   .wrapper {
-    padding: 40px; }
+    padding: 15px; }
   .hero-text {
     font-size: 30px;
     width: 150px; }
   .links {
-    right: 4px; }
+    display: none; }
   .feature {
     font-size: 30px;
     width: 150px; }
   .arrow {
     display: none; }
   #lamp-holder {
-    left: 83%; }
+    left: 80%; }
   .header .burger-menu {
     top: 4%;
     left: 5%;
     z-index: 1000; }
+  .burger-menu .burger-menu-line:before {
+    height: 2px;
+    left: 10px;
+    top: 9px; }
+  .burger-menu .burger-menu-line {
+    height: 2px; }
+  .burger-menu .burger-menu-line:after {
+    height: 2px;
+    top: 18px; }
   .parallax {
     display: none; }
   .parallax-two {
@@ -1271,7 +1324,8 @@ img.hover-shadow {
   .projects {
     display: none; }
   .column {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .github-link {
     font-size: 17px; }
   .timeline__year {
