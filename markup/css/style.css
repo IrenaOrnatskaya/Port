@@ -951,7 +951,6 @@ label:after {
 
 .timeline {
   outline: 1px dashed hotpink;
-  max-width: 1600px;
   margin-bottom: 100px;
   position: relative;
   border-radius: 10px;
@@ -1236,11 +1235,11 @@ date {
 
 /* Position the "next button" to the right */
 .next {
-  right: -51px;
+  right: -22px;
   border-radius: 3px 0 0 3px; }
 
 .prev {
-  left: -45px; }
+  left: -88px; }
 
 .certificates-images {
   display: block;
@@ -1377,14 +1376,11 @@ img.hover-shadow {
     left: 5%;
     z-index: 1000; }
   .burger-menu .burger-menu-line:before {
-    height: 2px;
-    left: 10px;
-    top: 9px; }
+    height: 2px; }
   .burger-menu .burger-menu-line {
     height: 2px; }
   .burger-menu .burger-menu-line:after {
-    height: 2px;
-    top: 18px; }
+    height: 2px; }
   .parallax {
     display: none; }
   .parallax-two {
