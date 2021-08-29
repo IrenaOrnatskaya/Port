@@ -620,6 +620,12 @@ background: #223345;
     #timeline {
         background: #223345;
     }
+    .phone-number {
+        color: $bg-content;
+    }
+    #bottom:after {
+        color: $bg-content;
+    }
     #dates li a {
         color: $bg-content;
     } 
@@ -1518,6 +1524,10 @@ date {
 }
 .info-text {
     display: none;
+}
+#bottom {
+    bottom: 51px;
+    right: -4px;
 }
 }
 /* mobile */

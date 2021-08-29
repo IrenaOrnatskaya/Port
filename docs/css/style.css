@@ -544,6 +544,10 @@ a {
       fill: #ee6c6c; }
   .dark-theme #timeline {
     background: #223345; }
+  .dark-theme .phone-number {
+    color: #FFFEF2; }
+  .dark-theme #bottom:after {
+    color: #FFFEF2; }
   .dark-theme #dates li a {
     color: #FFFEF2; }
   .dark-theme #issues li p {
@@ -1270,7 +1274,10 @@ date {
   .header .burger-menu {
     left: 7px; }
   .info-text {
-    display: none; } }
+    display: none; }
+  #bottom {
+    bottom: 51px;
+    right: -4px; } }
 
 /* mobile */
 @media only screen and (min-width: 375px) and (max-width: 415px) {
