@@ -20,7 +20,7 @@ body {
 .menu {
 	display: none;
 }
-.menu-open .info-text {
+.menu-open .introduction-text {
     transform: translate(80%);
 }
 .header {
@@ -64,7 +64,7 @@ a {
 	}
 }
 
-.info {
+.introduction {
 	display: flex;
 	flex-grow: 1;
 	flex-basis: 50%;
@@ -79,10 +79,10 @@ a {
 	display: flex;
 	align-items: center;
 }
-.info-text {
+.introduction-text {
     opacity: 0;
 }
-.hero-text {
+.greeting-text {
     font-family: playfair display, serif;
     font-size: $step;
     font-weight: 700;
@@ -95,7 +95,7 @@ a {
     justify-content: flex-end;
     margin-right: 10px;
 }
-.feature {
+.hero-text {
     color: #5580ad;
     font-family: playfair display,serif;
     font-size: 80px;
@@ -113,7 +113,7 @@ a {
             color: $bg-brand;
           
         }
-        & .feature {
+        & .hero-text {
             display: block;
             width: 400px;
             font-size: $step;
@@ -137,7 +137,7 @@ a {
   background: #232426;
 }
 
-.header .info-text {
+.header .introduction-text {
   position: relative;
   z-index: 1;
 
@@ -167,22 +167,22 @@ a {
   background-color: transparent;
   width: 100%;
 }
-.header:hover .info-text {
+.header:hover .introduction-text {
     opacity: 1;
 }
 
-.info-text {
+.introduction-text {
   opacity: 0;
   line-height: 1.3;
   transform: translate(60%); }
-  .info-text date {
+  .introduction-text date {
     color: #fffef2;
     font-size: 20px; }
-  .info-text h2 {
+  .introduction-text h2 {
     font-size: 32px;
     color: #000;
     font-weight: 700; }
-  .info-text p {
+  .introduction-text p {
     font-size: 32px;
     color: #fffef2; }
 .burger-menu {
@@ -516,7 +516,7 @@ a {
 	.hero {
 		background: #223345;
 	}
-	.info {
+	.introduction {
 		&-text {
 	        p {		       
 		        color: #fffef2;
@@ -1030,9 +1030,8 @@ label:after {
         }
     }
 }
-.dot-coral {
+.dot{
     color: $bg-brand;
-    font-size: 150px;
 }
 
 /*------------SLIDER----------->>>>>>>>>*/
@@ -1407,17 +1406,10 @@ date {
   background-color: black;
 }
 
-/* Modal Content */
-.modal-content {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 .img-slider {
     max-width:470px;
-    margin-left: 10px;
+
 }
 
 .certificates-images {
@@ -1437,15 +1429,20 @@ date {
     text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .projects {
-        display: none;
-    }
+   
+    .column {
+    flex-direction: column;
+    align-items: center;
+}
+.menu-open .menu { 
+    border-right: none;
+}
 }
 @media only screen and (min-width: 376px) and (max-width: 1165px) {
     .wrapper {
         padding: 30px;
     }
-.hero-text {
+.greeting-text {
     font-size: 50px;
     width: 300px;
 }
@@ -1455,7 +1452,7 @@ date {
 .logo {
     padding: 40px 31px;
 }
-.feature {
+.hero-text {
     font-size: 50px;
     width: 300px;
 }
@@ -1510,8 +1507,12 @@ date {
     width: 60%;
 }
 .img-slider {
-    max-width: 360px;
+    max-width: 500px;
     margin-top: 10px;
+}
+  .column {
+    flex-direction: column;
+    align-items: center;
 }
 .slick-slider .slick-slide.slick-center img{
     transform: scale(2.0);
@@ -1522,16 +1523,17 @@ date {
 .header .burger-menu {
     left: 7px;
 }
-.info-text {
+.introduction-text {
     display: none;
 }
 #bottom {
     bottom: 51px;
     right: -4px;
 }
+
 }
 /* mobile */
-@media only screen and (min-width: 375px) and (max-width: 415px) {
+@media only screen and (min-width: 375px) and (max-width: 600px) {
     .logo {
        padding: 30px 40px 30px 50px;
        text-align: center;
@@ -1539,7 +1541,7 @@ date {
     .wrapper {
         padding: 15px;
     }
-    .hero-text {
+    .greeting-text {
     font-size: 30px;
     width: 150px;
 }
@@ -1547,10 +1549,10 @@ date {
 .links {
     display: none;
 }
-.info-text {
+.introduction-text {
     display: none;
 }
-.feature {
+.hero-text {
     font-size: 30px;
     width: 150px;
 }
@@ -1599,9 +1601,7 @@ date {
      padding: 20px 25px 30px;
      margin-bottom: 50px;
 }
-.projects {
-    display: none;
-}
+
 .column {
     flex-direction: column;
     align-items: center;
@@ -1623,5 +1623,7 @@ date {
     left: 13px;
     width: 401px;
 }
+.img-slider {
+    max-width: 330px;
 }
-
+}

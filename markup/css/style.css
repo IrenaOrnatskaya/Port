@@ -69,7 +69,7 @@ body {
 .menu {
   display: none; }
 
-.menu-open .info-text {
+.menu-open .introduction-text {
   transform: translate(80%); }
 
 .header {
@@ -109,7 +109,7 @@ a {
     text-decoration: none;
     color: #000; }
 
-.info {
+.introduction {
   display: flex;
   flex-grow: 1;
   flex-basis: 50%;
@@ -124,10 +124,10 @@ a {
   display: flex;
   align-items: center; }
 
-.info-text {
+.introduction-text {
   opacity: 0; }
 
-.hero-text {
+.greeting-text {
   font-family: playfair display, serif;
   font-size: 80px;
   font-weight: 700;
@@ -141,7 +141,7 @@ a {
   justify-content: flex-end;
   margin-right: 10px; }
 
-.feature {
+.hero-text {
   color: #5580ad;
   font-family: playfair display,serif;
   font-size: 80px;
@@ -155,9 +155,9 @@ a {
   justify-content: flex-start;
   align-items: center;
   margin-left: 10px; }
-  .feature .dot {
+  .hero-text .dot {
     color: #ee6c6c; }
-  .feature .feature {
+  .hero-text .hero-text {
     display: block;
     width: 400px;
     font-size: 80px;
@@ -176,7 +176,7 @@ a {
 .header {
   background: #232426; }
 
-.header .info-text {
+.header .introduction-text {
   position: relative;
   z-index: 1; }
 
@@ -204,24 +204,24 @@ a {
   background-color: transparent;
   width: 100%; }
 
-.header:hover .info-text {
+.header:hover .introduction-text {
   opacity: 1; }
 
-.info-text {
+.introduction-text {
   opacity: 0;
   line-height: 1.3;
   transform: translate(60%); }
 
-.info-text date {
+.introduction-text date {
   color: #fffef2;
   font-size: 20px; }
 
-.info-text h2 {
+.introduction-text h2 {
   font-size: 32px;
   color: #000;
   font-weight: 700; }
 
-.info-text p {
+.introduction-text p {
   font-size: 32px;
   color: #fffef2; }
 
@@ -488,7 +488,7 @@ a {
     color: #ee6c6c; }
   .dark-theme .hero {
     background: #223345; }
-  .dark-theme .info-text p {
+  .dark-theme .introduction-text p {
     color: #fffef2;
     opacity: 0.8; }
   .dark-theme header:after,
@@ -866,9 +866,8 @@ label:after {
     .projects svg * {
       fill: #ee6c6c; }
 
-.dot-coral {
-  color: #ee6c6c;
-  font-size: 150px; }
+.dot {
+  color: #ee6c6c; }
 
 /*------------SLIDER----------->>>>>>>>>*/
 .slick-slider {
@@ -1189,17 +1188,8 @@ date {
   overflow: auto;
   background-color: black; }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
 .img-slider {
-  max-width: 470px;
-  margin-left: 10px; }
+  max-width: 470px; }
 
 .certificates-images {
   display: block;
@@ -1214,20 +1204,23 @@ date {
   text-align: center; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .projects {
-    display: none; } }
+  .column {
+    flex-direction: column;
+    align-items: center; }
+  .menu-open .menu {
+    border-right: none; } }
 
 @media only screen and (min-width: 376px) and (max-width: 1165px) {
   .wrapper {
     padding: 30px; }
-  .hero-text {
+  .greeting-text {
     font-size: 50px;
     width: 300px; }
   .header::before, .header::after {
     display: none; }
   .logo {
     padding: 40px 31px; }
-  .feature {
+  .hero-text {
     font-size: 50px;
     width: 300px; }
   #lamp-holder {
@@ -1265,35 +1258,38 @@ date {
   .skills .progress-line.git span {
     width: 60%; }
   .img-slider {
-    max-width: 360px;
+    max-width: 500px;
     margin-top: 10px; }
+  .column {
+    flex-direction: column;
+    align-items: center; }
   .slick-slider .slick-slide.slick-center img {
     transform: scale(2); }
   .github-link {
     font-size: 30px; }
   .header .burger-menu {
     left: 7px; }
-  .info-text {
+  .introduction-text {
     display: none; }
   #bottom {
     bottom: 51px;
     right: -4px; } }
 
 /* mobile */
-@media only screen and (min-width: 375px) and (max-width: 415px) {
+@media only screen and (min-width: 375px) and (max-width: 600px) {
   .logo {
     padding: 30px 40px 30px 50px;
     text-align: center; }
   .wrapper {
     padding: 15px; }
-  .hero-text {
+  .greeting-text {
     font-size: 30px;
     width: 150px; }
   .links {
     display: none; }
-  .info-text {
+  .introduction-text {
     display: none; }
-  .feature {
+  .hero-text {
     font-size: 30px;
     width: 150px; }
   .arrow {
@@ -1326,8 +1322,6 @@ date {
   .box {
     padding: 20px 25px 30px;
     margin-bottom: 50px; }
-  .projects {
-    display: none; }
   .column {
     flex-direction: column;
     align-items: center; }
@@ -1342,4 +1336,6 @@ date {
     right: -4px; }
   .menu {
     left: 13px;
-    width: 401px; } }
+    width: 401px; }
+  .img-slider {
+    max-width: 330px; } }
