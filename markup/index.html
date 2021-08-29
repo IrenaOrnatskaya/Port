@@ -53,8 +53,8 @@
                     <nav class="menu">
     				<ul>
     					<li class="nav-item"><a class="nav-item-link" href="#skills">Skills</a></li>
-    					<li class="nav-item"><a class="nav-item-link" href="#projects">Projects</a></li>
-    					<li class="nav-item"><a class="nav-item-link" href="#experience">Experience</a></li>
+    					<li class="nav-item"><a class="nav-item-link" href="#timeline">Timeline</a></li>
+                        <li class="nav-item"><a class="nav-item-link" href="#projects">Projects</a></li>
                     </ul>
                         <p class="menu-phone-number">+90 (555) 887 53 42</p>
                         <div class="box-email">
@@ -122,48 +122,7 @@
             </div>
         </section>
             <section class="parallax-two" data-stellar-background-ratio="0.5"></section>
-
-    		<section class="projects box" id="projects">
-
-    			    <h2 class="titles">PROJECTS<span class="dot-coral">.</span></h2>
-                    <div class='slick-slider'>
-                        <div class="slide">
-                        <a href="https://github.com/IrenaOrnatskaya/Responsive-page" target="_blank"><img src="img/Desktop.png" width='400' height='200'></a>
-                        <figcaption class='caption'>
-                            <h3>Responsive page for Mobile, Tablet and Desktop</h3>
-                            <span></span>
-                        </figcaption>
-                    </div>   
-                    <div class="slide">
-                        <a href="https://github.com/IrenaOrnatskaya/Library" target='_blank'><img src="img/dashboard.png" width='400' height='200'></a>
-                        <figcaption class='caption'>
-                            <h3>My Library</h3>
-                            <span></span>
-                            
-                        </figcaption>
-                        
-                    </div>
-                    <div class="slide">
-                        <a href="https://github.com/IrenaOrnatskaya/Layouts" target='_blank'><img src="img/layout2.png" width='400' height='200'></a>
-                        <figcaption class='caption'>
-                            <h3>Layouts</h3>
-                            <span></span>
-                        </figcaption>
-                    </div>
-                    <div class="slide">
-                        <img src="" width='400' height='200'>
-                       <figcaption class='caption'>
-                            <h3></h3>
-                            <span></span>
-                            
-                        </figcaption>
-                    </div>
-                    
-  
-    		</section>
-            
-          
-    		<div class="timeline box js-timeline">
+    		<div id="timeline" class="timeline box js-timeline">
                  <h2 class="titles">TIMELINE<span class="dot-coral">.</span></h2> 
                 <div class="timeline__year js-year"></div>
                 <div class="timeline__control timeline__control--back js-back">
@@ -226,44 +185,15 @@
     	    <section class="certificates box" id="certificat-images">
                 <h2 class="titles">CERTIFICATES<span class="dot-coral">.</span></h2> 
   <div class="column">
-    <img  class="img-slider" src="img/certificate_basic.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img  class="img-slider" src="img/certificate_basic.png"  class="hover-shadow">
   
-    <img class="img-slider" src="img/pro_certificate.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img class="img-slider" src="img/pro_certificate.png" class="hover-shadow">
   </div>
  
 
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()"><img class="closebtn" src="img/closebtn.png" alt="closebtn"></span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 2</div>
-      <img class="big-image" src="img/certificate_basic.png">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 2</div>
-      <img class="big-image" src="img/pro_certificate.png">
-    </div>
 
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img/certificate_basic.png" onclick="currentSlide(1)" alt="Front End Basic Certificate">
-
-   
-      <img class="demo" src="img/pro_certificate.png" onclick="currentSlide(2)" alt="Front End Pro Certificate">
-    </div>
-
-  </div>
-</div>
-<div class="github-link">
+<div id="projects" class="github-link">
         <a href="https://github.com/IrenaOrnatskaya" target="_blank">
             <h2>Please, check my code samples on GITHUB &rarr;</h2></a>
     </div>
@@ -271,17 +201,14 @@
             <footer class="footer">
                 <p class="collaboration">Want to collaborate?</p>
                 <div class="social">
-                <a class="email"href="mailto:ornatskayairena@gmail.com" target="_blank">
+                    <a class="email"href="mailto:ornatskayairena@gmail.com" target="_blank">
                     <p class="social-info">email me &rarr;</p></a>
                     <span class="phone-number">+90 (555) 887 53 42</span>
-                    
                 </div>
-                
-    </footer>
+            </footer>
 </div>
   <a id="bottom">
                </a>
-
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script src="js/script.js"></script>
