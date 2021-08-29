@@ -554,6 +554,8 @@ a {
     color: #FFFEF2; }
   .dark-theme #issues .certificate {
     color: #ee6c6c; }
+  .dark-theme .img-slider {
+    margin-left: 10px; }
 
 #lamp-holder {
   position: fixed;
