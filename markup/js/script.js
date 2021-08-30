@@ -1,4 +1,3 @@
-
 //DARK THEME
 function darkToggle() {
                let element = document.getElementById("body");
@@ -12,9 +11,9 @@ $(document).ready(function () {
 		$('.wrapper').toggleClass('menu-open');
 	});
 });
-//ARROW UP
-let btn = $('#bottom');
 
+//ARROW UP
+let btn = $('#arrow-up');
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
@@ -22,13 +21,10 @@ $(window).scroll(function() {
     btn.removeClass('show');
   }
 });
-
 btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
-
-
 
 
 // TIMELINE
@@ -219,7 +215,7 @@ btn.on('click', function(e) {
 
         this.getSliderBounds();
         
-        this.changeState(this.state.year); // initialize
+        this.changeState(this.state.year);
     }
 }
 
